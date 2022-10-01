@@ -86,14 +86,27 @@ body {
   background-color: #fff;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .header__container {
   max-width: 1346px;
   margin: 0 auto;
   padding: 0 10px;
 }
 
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 .header {
   background-color: #FAFAFA;
+  position: fixed;
+  width: 100%;
 }
 .header__nav {
   display: flex;
@@ -120,8 +133,12 @@ body {
   color: #fff;
 }
 
-.logo {
-  align-self: stretch;
+.menu__link {
+  opacity: .6;
+  transition: .3 ease-in-out;
+}
+.menu__link:hover, .menu__link:focus {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,8 @@
 .header {
 
     background-color: $color-optional;
+    position: fixed;
+    width: 100%;
 
     &__nav {
         display: flex;
@@ -31,17 +33,12 @@
 }
 
 
-.nav {
-
-    &__logo {
-
-    }
-}
-.logo {
-    align-self: stretch;
-}
 .menu {
-
-    &__list {
+    &__link {
+        opacity: .6;
+        transition: .3 ease-in-out;
+        &:hover , &:focus{
+            opacity: 1;
+        }
     }
 }
