@@ -1,0 +1,47 @@
+.header {
+
+    background-color: $color-optional;
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        height: 116px;
+        align-items: center;
+    }
+
+    &__menu {
+        display: flex;
+        gap: 31px;
+        justify-content: space-between;
+    }
+
+    &__button {
+        width: 150px;
+        height: 43.5px;
+        border-radius: 5px;
+        background-color: $color-optional;
+        color: $color-text-button;
+        border: 1px solid $color-border;
+        transition: .3s all;
+        &:hover, &:focus {
+            background-color: $color-button-hover;
+            color: $color-main;
+        }
+    }
+}
+
+
+.nav {
+
+    &__logo {
+
+    }
+}
+.logo {
+    align-self: stretch;
+}
+.menu {
+
+    &__list {
+    }
+}

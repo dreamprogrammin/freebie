@@ -6,4 +6,14 @@
         url('/fonts/Gilroy-light/Gilroy-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy Bold'), local('Gilroy-Bold'),
+        url('/fonts/Gilroy-Bold/Gilroy-Bold.woff2') format('woff2'),
+        url('/fonts/Gilroy-Bold/Gilroy-Bold.woff2') format('woff'),
+        url('/fonts/Gilroy-Bold/Gilroy-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
   }
