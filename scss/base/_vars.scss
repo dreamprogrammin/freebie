@@ -6,3 +6,10 @@ $color-button-hover: #F7941E;
 $color-black-hover: #231F20;
 $color-black: black;
 
+%title{
+    font-size: 56px;
+    line-height: 69px;
+    font-weight: 500;
+    color: $color-black;
+}
+

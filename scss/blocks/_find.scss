@@ -1,32 +1,47 @@
 .find {
 
     &__grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
 
         padding-top: 116px;
         width: 100%;
     }
 
     &__grid-items {
+        align-content: center;
+        width: 720px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         & img{
             width: 100%;
+
         }
     }
 
     &__item-title {
+        max-width: 433px;
+        margin-bottom: 36px
     }
 
     &__item-text {
+        max-width: 422px;
+        font-size: 20px;
     }
 
     &__item-button {
+        align-self: center;
     }
 
     &__item-subtitle {
     }
 }
 .title {
+    @extend %title;
 }
 .subtitle {
 }

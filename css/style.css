@@ -67,6 +67,13 @@ img {
   box-sizing: border-box;
 }
 
+.title {
+  font-size: 56px;
+  line-height: 69px;
+  font-weight: 500;
+  color: black;
+}
+
 @font-face {
   font-family: 'Gilroy';
   src: local("Gilroy Light"), local("Gilroy-Light"), url("/fonts/Gilroy-light/Gilroy-Light.woff2") format("woff2"), url("/fonts/Gilroy-light/Gilroy-Light.woff") format("woff"), url("/fonts/Gilroy-light/Gilroy-Light.ttf") format("truetype");
@@ -147,13 +154,33 @@ a {
 }
 
 .find__grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   padding-top: 116px;
   width: 100%;
 }
+.find__grid-items {
+  align-content: center;
+  width: 720px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .find__grid-items img {
   width: 100%;
+}
+.find__item-title {
+  max-width: 433px;
+  margin-bottom: 36px;
+}
+.find__item-text {
+  max-width: 422px;
+  font-size: 20px;
+}
+.find__item-button {
+  align-self: center;
 }
 
 /*# sourceMappingURL=style.css.map */
