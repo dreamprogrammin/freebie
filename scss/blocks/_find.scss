@@ -1,0 +1,32 @@
+.find {
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        padding-top: 116px;
+        width: 100%;
+    }
+
+    &__grid-items {
+        & img{
+            width: 100%;
+        }
+    }
+
+    &__item-title {
+    }
+
+    &__item-text {
+    }
+
+    &__item-button {
+    }
+
+    &__item-subtitle {
+    }
+}
+.title {
+}
+.subtitle {
+}

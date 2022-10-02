@@ -97,6 +97,11 @@ a {
   padding: 0 10px;
 }
 
+.find__container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .container {
   max-width: 1180px;
   margin: 0 auto;
@@ -139,6 +144,16 @@ a {
 }
 .menu__link:hover, .menu__link:focus {
   opacity: 1;
+}
+
+.find__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 116px;
+  width: 100%;
+}
+.find__grid-items img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
