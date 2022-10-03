@@ -1,5 +1,5 @@
 .find {
-
+    background-color: $color-optional;
     &__grid {
         display: flex;
         flex-wrap: wrap;
@@ -31,10 +31,20 @@
     &__item-text {
         max-width: 422px;
         font-size: 20px;
+        margin-bottom: 52px;
     }
 
     &__item-button {
-        align-self: center;
+        align-self: flex-start;
+        margin: 0 0 100px 145px;
+        width: 200px;
+        height: 40px;
+        border: 1px solid $color-border;
+        transition: .3s ease-in-out;
+        &:hover, &:focus{
+            background-color: $color-button-hover;
+            color: $color-main
+        }
     }
 
     &__item-subtitle {

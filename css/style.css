@@ -153,6 +153,9 @@ a {
   opacity: 1;
 }
 
+.find {
+  background-color: #FAFAFA;
+}
 .find__grid {
   display: flex;
   flex-wrap: wrap;
@@ -178,9 +181,19 @@ a {
 .find__item-text {
   max-width: 422px;
   font-size: 20px;
+  margin-bottom: 52px;
 }
 .find__item-button {
-  align-self: center;
+  align-self: flex-start;
+  margin: 0 0 100px 145px;
+  width: 200px;
+  height: 40px;
+  border: 1px solid #F7941E;
+  transition: .3s ease-in-out;
+}
+.find__item-button:hover, .find__item-button:focus {
+  background-color: #F7941E;
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
