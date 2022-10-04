@@ -17,9 +17,12 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        background-color: $color-main;
         & img{
             width: 100%;
-
+        }
+        &:last-child {
+            background-color: $color-optional;
         }
     }
 
@@ -35,19 +38,27 @@
     }
 
     &__item-button {
-        align-self: flex-start;
-        margin: 0 0 100px 145px;
+        margin-bottom: 135px;
         width: 200px;
         height: 40px;
         border: 1px solid $color-border;
+        background-color: $color-main;
         transition: .3s ease-in-out;
+
+        &:nth-child(2){
+            background-color: $color-optional;
+        }
+
         &:hover, &:focus{
             background-color: $color-button-hover;
             color: $color-main
         }
     }
 
+
     &__item-subtitle {
+        @extend %subtitle;
+        margin: 20px 0px 23px 0px;
     }
 }
 .title {

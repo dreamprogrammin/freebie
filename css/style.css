@@ -74,6 +74,12 @@ img {
   color: black;
 }
 
+.find__item-subtitle {
+  font-size: 32px;
+  font-weight: 500;
+  color: black;
+}
+
 @font-face {
   font-family: 'Gilroy';
   src: local("Gilroy Light"), local("Gilroy-Light"), url("/fonts/Gilroy-light/Gilroy-Light.woff2") format("woff2"), url("/fonts/Gilroy-light/Gilroy-Light.woff") format("woff"), url("/fonts/Gilroy-light/Gilroy-Light.ttf") format("truetype");
@@ -106,6 +112,11 @@ a {
 
 .find__container {
   max-width: 1440px;
+  margin: 0 auto;
+}
+
+.find__item-wrapper {
+  max-width: 441px;
   margin: 0 auto;
 }
 
@@ -170,9 +181,13 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #fff;
 }
 .find__grid-items img {
   width: 100%;
+}
+.find__grid-items:last-child {
+  background-color: #FAFAFA;
 }
 .find__item-title {
   max-width: 433px;
@@ -184,16 +199,22 @@ a {
   margin-bottom: 52px;
 }
 .find__item-button {
-  align-self: flex-start;
-  margin: 0 0 100px 145px;
+  margin-bottom: 135px;
   width: 200px;
   height: 40px;
   border: 1px solid #F7941E;
+  background-color: #fff;
   transition: .3s ease-in-out;
+}
+.find__item-button:nth-child(2) {
+  background-color: #FAFAFA;
 }
 .find__item-button:hover, .find__item-button:focus {
   background-color: #F7941E;
   color: #fff;
+}
+.find__item-subtitle {
+  margin: 20px 0px 23px 0px;
 }
 
 /*# sourceMappingURL=style.css.map */
