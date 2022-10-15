@@ -1,0 +1,108 @@
+.blogs {
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__caption {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        margin-bottom: 71px;
+    }
+
+    &__caption-mintitle {
+        line-height: 38px;
+        margin-bottom: 23px;
+    }
+
+    &__main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 78px;
+        flex-wrap: wrap-reverse;
+        margin-bottom: 40px;
+
+        width: 100%;
+        color: $color-main;
+        background-color: $color-black;
+    }
+
+    &__main-img {
+        & img{
+            width: 100%;
+        }
+    }
+
+    &__main-caption {
+        display: flex;
+        flex-direction: column;
+        width: 692px;
+    }
+
+    &__main-author {
+        margin-bottom: 27px;
+    }
+
+    &__main-title {
+        max-width: 492px;
+        font-size: 48px;
+        line-height: 58px;
+        margin-bottom: 60px;
+        color: $color-main;
+    }
+
+    &__main-more {
+        font-family: 'Gilroy';
+        font-size: 18px;
+        line-height: 140.62%;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 48px;
+        width: 570px;
+        height: 290px;
+        &.active{
+            background-color: $color-main;
+            -webkit-box-shadow: 6px 8px 11px 6px rgba(34, 60, 80, 0.08);
+            -moz-box-shadow: 6px 8px 11px 6px rgba(34, 60, 80, 0.08);
+            box-shadow: 6px 8px 11px 6px rgba(34, 60, 80, 0.08);
+        }
+    }
+}
+
+
+.blog {
+
+    &__item-title {
+        margin-bottom: 16px;
+        max-width: 474px;
+        line-height: 140.62%;
+    }
+
+    &__item-text {
+        line-height: 140.62%;
+        max-width: 474px;
+        margin-bottom: 16px;
+    }
+
+    &__item-more {
+        font-size: 14px;
+        line-height: 140.62%;
+    }
+}

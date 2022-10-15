@@ -13,8 +13,15 @@ $color-black: black;
     color: $color-black;
 }
 
-%subtitle{
+%mintitle{
     font-size: 32px;
     font-weight: 500;
+    color: $color-black;
+}
+
+%item__title{
+    font-family: 'Gilroy';
+    font-size: 24px;
+    font-weight: 700;
     color: $color-black;
 }

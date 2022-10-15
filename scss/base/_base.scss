@@ -30,5 +30,16 @@ a{
 .container{
     max-width: 1180px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 5px;
+}
+
+.title {
+    @extend %title;
+}
+.mintitle {
+    @extend %mintitle;
+}
+
+.item__title{
+    @extend %item__title;
 }

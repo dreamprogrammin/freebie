@@ -8,6 +8,7 @@
 
         padding-top: 116px;
         width: 100%;
+        margin-bottom: 96px;
     }
 
     &__grid-items {
@@ -20,6 +21,9 @@
         background-color: $color-main;
         & img{
             width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-fit: contain;
         }
         &:last-child {
             background-color: $color-optional;
@@ -38,7 +42,6 @@
     }
 
     &__item-button {
-        margin-bottom: 135px;
         width: 200px;
         height: 40px;
         border: 1px solid $color-border;
@@ -56,13 +59,8 @@
     }
 
 
-    &__item-subtitle {
-        @extend %subtitle;
+    &__item-mintitle {
         margin: 20px 0px 23px 0px;
     }
 }
-.title {
-    @extend %title;
-}
-.subtitle {
-}
+
