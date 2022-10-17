@@ -4,6 +4,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        row-gap: 15px;
 
 
         padding-top: 116px;
@@ -47,6 +48,7 @@
         border: 1px solid $color-border;
         background-color: $color-main;
         transition: .3s ease-in-out;
+        margin-bottom: 135px;
 
         &:nth-child(2){
             background-color: $color-optional;
