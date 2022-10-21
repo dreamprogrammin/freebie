@@ -1,0 +1,38 @@
+@include mobile{
+  body.lock{
+    overflow: hidden;
+  }  
+ .header{
+    & .menu{
+        display: none;
+    }
+    &__nav{
+        height: 70px;
+    }
+    &__burger{
+        display: block;
+    }
+ } 
+    .popup {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        left: -100%;
+        z-index: 10;
+        transition: .3s all;
+        background-color: $color-main;
+        &.open{
+            left: 0;
+        }
+        & .header__menu{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+            justify-content: stretch;
+            align-items: center;
+            font-size: 48px;
+        }
+    }
+}

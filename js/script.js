@@ -27,3 +27,24 @@ for(blogsItem of blogsItems){
         }
     })
 }
+
+const headerBurger = document.querySelector('.header__burger'),
+      headerMenu = document.querySelector('.header__menu').cloneNode(1),
+      popup = document.querySelector('.popup'),
+      body = document.querySelector('body')
+
+const renderPopup = () =>{
+    popup.appendChild(headerMenu)
+} 
+
+const initBurger = () => {
+    headerBurger.classList.toggle('active')
+    popup.classList.toggle('open')
+    body.classList.toggle('lock')
+    renderPopup()
+}
+
+
+window.addEventListener('click',initBurger)
+
+
