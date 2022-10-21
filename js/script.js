@@ -45,6 +45,6 @@ const initBurger = () => {
 }
 
 
-window.addEventListener('click',initBurger)
+headerBurger.addEventListener('click',initBurger)
 
 
