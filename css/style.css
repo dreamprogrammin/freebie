@@ -104,7 +104,6 @@ body {
   font-size: 18px;
   font-weight: 300;
   background-color: #fff;
-  color: black;
 }
 
 a {
@@ -260,6 +259,7 @@ a {
   background-color: #fff;
   transition: .3s ease-in-out;
   margin-bottom: 135px;
+  color: #F7941E;
 }
 .find__item-button:nth-child(2) {
   background-color: #FAFAFA;
@@ -374,6 +374,7 @@ a {
   border-radius: 5px;
   background-color: #F7941E;
   border: 1px solid black;
+  color: black;
 }
 .ready__button:hover {
   background-color: black;
